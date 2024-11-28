@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Home Page</title>
+    {% endblock %}
+</head>
+<body>
+    {% block empty %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="username">Enter User Name</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Enter Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login">
+    </form>
+    {% endblock%}
+</body>
+</html>

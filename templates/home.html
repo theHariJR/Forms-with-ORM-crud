@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+        <title>Home Page</title>
+    {% endblock %}
+</head>
+<body>
+    {% block empty %}
+        {% if name %}
+            <h1>Welcome Home {{name}}</h1>
+        {% else %}
+            <h1>Welcome Home</h1>
+        {% endif %}
+    {% endblock %}
+</body>
+</html>
